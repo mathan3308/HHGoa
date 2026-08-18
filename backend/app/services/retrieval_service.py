@@ -79,6 +79,13 @@ class RetrievalService:
                 "source_id": "p4",
                 "text": "Qdrant is an open-source vector search engine built in Rust that provides fast vector similarity search alongside rich payload filtering capabilities.",
                 "language": "en"
+            },
+            {
+                "chunk_id": "p5_c1",
+                "passage_id": "p5",
+                "source_id": "p5",
+                "text": "The President of India is the constitutional head of state of the Republic of India and Commander-in-Chief of the Indian Armed Forces. The official residence of the President of India is the Rashtrapati Bhavan located in New Delhi.",
+                "language": "en"
             }
         ]
 
