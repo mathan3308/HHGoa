@@ -1,11 +1,19 @@
 import os
 from typing import List
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import Field
+
+# Locate .env file dynamically whether running from root, backend, or Docker
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ENV_FILE_PATHS = [
+    os.path.join(BASE_DIR, "..", ".env"),
+    os.path.join(BASE_DIR, ".env"),
+    "backend/.env",
+    ".env"
+]
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=ENV_FILE_PATHS,
         env_file_encoding="utf-8",
         extra="ignore"
     )
@@ -38,7 +46,7 @@ class Settings(BaseSettings):
     SEMANTIC_THRESHOLD: float = 0.75
 
     # Guardrails & Scoring Thresholds
-    RETRIEVAL_THRESHOLD: float = 0.35
+    RETRIEVAL_THRESHOLD: float = 0.10
     GROUNDING_THRESHOLD: float = 0.60
     USE_RERANKER: bool = False
 
