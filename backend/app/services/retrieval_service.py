@@ -36,6 +36,55 @@ class RetrievalService:
         # In-memory document buffer for sparse indexing
         self.indexed_docs: List[Dict[str, Any]] = []
 
+        # Auto-seed default knowledge base documents on startup if index is empty
+        self.seed_default_knowledge_base()
+
+    def seed_default_knowledge_base(self) -> None:
+        """Seeds standard dataset passages into Qdrant & BM25 index on startup."""
+        if self.indexed_docs:
+            return
+
+        default_passages = [
+            {
+                "chunk_id": "p1_c1",
+                "passage_id": "p1",
+                "source_id": "p1",
+                "text": "New Delhi is the capital of India and an administrative district within the National Capital Territory of Delhi. New Delhi houses all three branches of the Government of India, including the Rashtrapati Bhavan, Parliament House, and the Supreme Court of India.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p1_c2",
+                "passage_id": "p1",
+                "source_id": "p1",
+                "text": "The city of New Delhi plays a vital role as the political, administrative, and economic center of India. It accommodates major national government institutions, foreign embassies, and historic national monuments.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p2_c1",
+                "passage_id": "p2",
+                "source_id": "p2",
+                "text": "Retrieval-Augmented Generation (RAG) is an advanced architectural pattern designed to enhance the accuracy and reliability of Large Language Models (LLMs) by grounding them on external knowledge bases.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p3_c1",
+                "passage_id": "p3",
+                "source_id": "p3",
+                "text": "Sarvam AI's Saaras v3 represents a state-of-the-art speech-to-text model engineered specifically for Indian languages, accents, and code-mixed speech scenarios.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p4_c1",
+                "passage_id": "p4",
+                "source_id": "p4",
+                "text": "Qdrant is an open-source vector search engine built in Rust that provides fast vector similarity search alongside rich payload filtering capabilities.",
+                "language": "en"
+            }
+        ]
+
+        logger.info(f"Seeding default knowledge base ({len(default_passages)} passages)...")
+        self.index_chunks(default_passages)
+
     def ensure_collection(self, vector_size: int = 384) -> bool:
         if not self.client:
             return False
