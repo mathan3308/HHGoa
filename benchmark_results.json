@@ -1,0 +1,28 @@
+{
+  "benchmark_metadata": {
+    "num_queries": 50,
+    "strategy": "semantic",
+    "timestamp": "2026-08-18 11:17:56"
+  },
+  "metrics": {
+    "total_rag_ms": {
+      "p50": 88.86500000000001,
+      "p70": 97.106,
+      "p100": 204.76,
+      "mean": 97.8484,
+      "min": 62.56,
+      "max": 204.76
+    },
+    "end_to_end_ms": {
+      "p50": 88.86500000000001,
+      "p70": 97.106,
+      "p100": 204.76,
+      "mean": 97.8484,
+      "min": 62.56,
+      "max": 204.76
+    },
+    "embedding_ms_mean": 52.41720000000001,
+    "retrieval_ms_mean": 44.827000000000005,
+    "generation_ms_mean": 0.0
+  }
+}
