@@ -86,6 +86,48 @@ class RetrievalService:
                 "source_id": "p5",
                 "text": "The President of India is the constitutional head of state of the Republic of India and Commander-in-Chief of the Indian Armed Forces. The official residence of the President of India is the Rashtrapati Bhavan located in New Delhi.",
                 "language": "en"
+            },
+            {
+                "chunk_id": "p6_c1",
+                "passage_id": "p6",
+                "source_id": "p6",
+                "text": "The Prime Minister of India is the head of government of the Republic of India and leader of the executive branch of the central government.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p7_c1",
+                "passage_id": "p7",
+                "source_id": "p7",
+                "text": "The Parliament of India is the supreme legislative body of the Republic of India, consisting of the President of India and two houses: the Rajya Sabha (Council of States) and the Lok Sabha (House of the People).",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p8_c1",
+                "passage_id": "p8",
+                "source_id": "p8",
+                "text": "The Indian Rupee (symbol: INR, code: INR) is the official currency of the Republic of India. The issuance of currency is controlled by the Reserve Bank of India (RBI).",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p9_c1",
+                "passage_id": "p9",
+                "source_id": "p9",
+                "text": "The Indian Space Research Organisation (ISRO) is the national space agency of India. Famous missions include Chandrayaan lunar missions and the Mangalyaan Mars Orbiter Mission.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p10_c1",
+                "passage_id": "p10",
+                "source_id": "p10",
+                "text": "The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1631 by Mughal emperor Shah Jahan and is a UNESCO World Heritage site.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p11_c1",
+                "passage_id": "p11",
+                "source_id": "p11",
+                "text": "The AI4Bharat MSMARCO-XI dataset is a multilingual benchmark collection specifically created for evaluating information retrieval across eleven major Indian languages.",
+                "language": "en"
             }
         ]
 
