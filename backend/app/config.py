@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     # Sarvam AI Credentials & Models
     SARVAM_API_KEY: str = ""
     SARVAM_STT_MODEL: str = "saaras:v3"
-    SARVAM_LLM_MODEL: str = "sarvam-30b"
+    SARVAM_LLM_MODEL: str = "sarvam-105b-conversations"
 
     # Qdrant Vector Database
     QDRANT_URL: str = "http://localhost:6333"

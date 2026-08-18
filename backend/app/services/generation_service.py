@@ -11,8 +11,8 @@ class BaseLLMProvider:
         raise NotImplementedError
 
 class SarvamLLMProvider(BaseLLMProvider):
-    """Sarvam AI LLM provider using sarvam-30b model."""
-    def __init__(self, api_key: str, model: str = "sarvam-30b"):
+    """Sarvam AI LLM provider using sarvam-105b-conversations model."""
+    def __init__(self, api_key: str, model: str = "sarvam-105b-conversations"):
         self.api_key = api_key
         self.model = model
         self.url = "https://api.sarvam.ai/v1/chat/completions"
