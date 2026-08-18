@@ -128,6 +128,27 @@ class RetrievalService:
                 "source_id": "p11",
                 "text": "The AI4Bharat MSMARCO-XI dataset is a multilingual benchmark collection specifically created for evaluating information retrieval across eleven major Indian languages.",
                 "language": "en"
+            },
+            {
+                "chunk_id": "p12_c1",
+                "passage_id": "p12",
+                "source_id": "p12",
+                "text": "Photosynthesis is the process used by plants, algae, and certain bacteria to convert light energy from the sun into chemical energy in the form of glucose. It enables plants to synthesize organic nutrients and release oxygen essential for cellular respiration and survival.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p13_c1",
+                "passage_id": "p13",
+                "source_id": "p13",
+                "text": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 71 percent of Earth's surface is covered by liquid water oceans.",
+                "language": "en"
+            },
+            {
+                "chunk_id": "p14_c1",
+                "passage_id": "p14",
+                "source_id": "p14",
+                "text": "Artificial Intelligence (AI) refers to computer systems and machine learning models engineered to perform complex cognitive tasks including speech recognition, vector retrieval, and natural language reasoning.",
+                "language": "en"
             }
         ]
 
