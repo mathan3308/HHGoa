@@ -1,0 +1,122 @@
+[
+  {
+    "query": "What is the capital city of India?",
+    "language": "en",
+    "query_type": "factual",
+    "expected_passage_ids": ["p1"]
+  },
+  {
+    "query": "Who is the President of India?",
+    "language": "en",
+    "query_type": "factual",
+    "expected_passage_ids": ["p2"]
+  },
+  {
+    "query": "Who is the Prime Minister of India?",
+    "language": "en",
+    "query_type": "factual",
+    "expected_passage_ids": ["p3"]
+  },
+  {
+    "query": "What is the Parliament of India?",
+    "language": "en",
+    "query_type": "factual",
+    "expected_passage_ids": ["p4"]
+  },
+  {
+    "query": "What is the official currency of India?",
+    "language": "en",
+    "query_type": "factual",
+    "expected_passage_ids": ["p5"]
+  },
+  {
+    "query": "What is ISRO?",
+    "language": "en",
+    "query_type": "factual",
+    "expected_passage_ids": ["p6"]
+  },
+  {
+    "query": "Where is the Taj Mahal located?",
+    "language": "en",
+    "query_type": "factual",
+    "expected_passage_ids": ["p7"]
+  },
+  {
+    "query": "How does photosynthesis help plants survive?",
+    "language": "en",
+    "query_type": "science",
+    "expected_passage_ids": ["p8"]
+  },
+  {
+    "query": "What percentage of Earth's surface is covered by water?",
+    "language": "en",
+    "query_type": "science",
+    "expected_passage_ids": ["p9"]
+  },
+  {
+    "query": "What is Retrieval-Augmented Generation?",
+    "language": "en",
+    "query_type": "technical",
+    "expected_passage_ids": ["p10"]
+  },
+  {
+    "query": "What is Qdrant?",
+    "language": "en",
+    "query_type": "technical",
+    "expected_passage_ids": ["p11"]
+  },
+  {
+    "query": "What is Sarvam AI Saaras v3?",
+    "language": "en",
+    "query_type": "technical",
+    "expected_passage_ids": ["p12"]
+  },
+  {
+    "query": "What is sarvam-105b-conversations?",
+    "language": "en",
+    "query_type": "technical",
+    "expected_passage_ids": ["p13"]
+  },
+  {
+    "query": "What is Artificial Intelligence?",
+    "language": "en",
+    "query_type": "technical",
+    "expected_passage_ids": ["p14"]
+  },
+  {
+    "query": "What is the Ganges River?",
+    "language": "en",
+    "query_type": "geography",
+    "expected_passage_ids": ["p15"]
+  },
+  {
+    "query": "What are the Himalayas?",
+    "language": "en",
+    "query_type": "geography",
+    "expected_passage_ids": ["p16"]
+  },
+  {
+    "query": "What is cricket in India?",
+    "language": "en",
+    "query_type": "sports",
+    "expected_passage_ids": ["p17"]
+  },
+  {
+    "query": "What is the MSMARCO-XI dataset?",
+    "language": "en",
+    "query_type": "technical",
+    "expected_passage_ids": ["p18"]
+  },
+  {
+    "query": "What is Machine Learning?",
+    "language": "en",
+    "query_type": "technical",
+    "expected_passage_ids": ["p19"]
+  },
+  {
+    "query": "What is the Constitution of India?",
+    "language": "en",
+    "query_type": "factual",
+    "expected_passage_ids": ["p20"]
+  }
+]

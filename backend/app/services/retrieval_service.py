@@ -1,5 +1,6 @@
 import os
 import json
+import uuid
 from typing import List, Dict, Any, Optional
 from qdrant_client import QdrantClient
 from qdrant_client.http import models
@@ -217,8 +218,10 @@ class RetrievalService:
         if self.client:
             points = []
             for idx, (chunk, emb) in enumerate(zip(chunks, embeddings)):
+                chunk_key = f"{chunk.get('source_id', '')}_{chunk.get('chunk_id', idx)}_{chunk.get('chunk_strategy', 'semantic')}_{idx}"
+                point_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, chunk_key))
                 points.append(models.PointStruct(
-                    id=idx + len(self.indexed_docs) + 1,
+                    id=point_id,
                     vector=emb,
                     payload=chunk
                 ))
