@@ -1,0 +1,142 @@
+[
+  {
+    "query_id": "q1",
+    "passage_id": "p1",
+    "passage": "New Delhi is the capital city of India and an administrative district within the National Capital Territory of Delhi. New Delhi houses all three branches of the Government of India, including the Rashtrapati Bhavan, Parliament House, and the Supreme Court of India.",
+    "language": "en",
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q2",
+    "passage_id": "p2",
+    "passage": "The President of India is the constitutional head of state of the Republic of India and Commander-in-Chief of the Indian Armed Forces. The official residence of the President of India is the Rashtrapati Bhavan located in New Delhi.",
+    "language": "en",
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q3",
+    "passage_id": "p3",
+    "passage": "The Prime Minister of India is the head of government of the Republic of India and leader of the executive branch of the central government.",
+    "language": "en",
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q4",
+    "passage_id": "p4",
+    "passage": "The Parliament of India is the supreme legislative body of the Republic of India, consisting of the President of India and two houses: the Rajya Sabha (Council of States) and the Lok Sabha (House of the People).",
+    "language": "en",
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q5",
+    "passage_id": "p5",
+    "passage": "The Indian Rupee (symbol: INR, code: INR) is the official currency of the Republic of India. The issuance of currency is controlled by the Reserve Bank of India (RBI).",
+    "language": "en",
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q6",
+    "passage_id": "p6",
+    "passage": "The Indian Space Research Organisation (ISRO) is the national space agency of India. Famous missions include Chandrayaan lunar missions and the Mangalyaan Mars Orbiter Mission.",
+    "language": "en",
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q7",
+    "passage_id": "p7",
+    "passage": "The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1631 by Mughal emperor Shah Jahan and is a UNESCO World Heritage site.",
+    "language": "en",
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q8",
+    "passage_id": "p8",
+    "passage": "Photosynthesis is the process used by plants, algae, and certain bacteria to convert light energy from the sun into chemical energy in the form of glucose. It enables plants to synthesize organic nutrients and release oxygen essential for cellular respiration and survival.",
+    "language": "en",
+    "query_type": "science"
+  },
+  {
+    "query_id": "q9",
+    "passage_id": "p9",
+    "passage": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 71 percent of Earth's surface is covered by liquid water oceans.",
+    "language": "en",
+    "query_type": "science"
+  },
+  {
+    "query_id": "q10",
+    "passage_id": "p10",
+    "passage": "Retrieval-Augmented Generation (RAG) is an advanced architectural pattern designed to enhance the accuracy and reliability of Large Language Models (LLMs) by grounding them on external knowledge bases.",
+    "language": "en",
+    "query_type": "technical"
+  },
+  {
+    "query_id": "q11",
+    "passage_id": "p11",
+    "passage": "Qdrant is an open-source vector search engine built in Rust that provides fast vector similarity search alongside rich payload filtering capabilities.",
+    "language": "en",
+    "query_type": "technical"
+  },
+  {
+    "query_id": "q12",
+    "passage_id": "p12",
+    "passage": "Sarvam AI's Saaras v3 represents a state-of-the-art speech-to-text model engineered specifically for Indian languages, accents, and code-mixed speech scenarios.",
+    "language": "en",
+    "query_type": "technical"
+  },
+  {
+    "query_id": "q13",
+    "passage_id": "p13",
+    "passage": "Sarvam-105b-conversations is a state-of-the-art multilingual large language model optimized for conversational reasoning, Indian language understanding, and grounded context synthesis.",
+    "language": "en",
+    "query_type": "technical"
+  },
+  {
+    "query_id": "q14",
+    "passage_id": "p14",
+    "passage": "Artificial Intelligence (AI) refers to computer systems and machine learning models engineered to perform complex cognitive tasks including speech recognition, vector retrieval, and natural language reasoning.",
+    "language": "en",
+    "query_type": "technical"
+  },
+  {
+    "query_id": "q15",
+    "passage_id": "p15",
+    "passage": "The Ganges River, also known as the Ganga, is a trans-boundary river of Asia which flows through India and Bangladesh. It is considered sacred in Hinduism.",
+    "language": "en",
+    "query_type": "geography"
+  },
+  {
+    "query_id": "q16",
+    "passage_id": "p16",
+    "passage": "The Himalayas, or Himalayan mountain range, is a mountain range in Asia separating the plains of the Indian subcontinent from the Tibetan Plateau. It includes Mount Everest, the highest peak on Earth.",
+    "language": "en",
+    "query_type": "geography"
+  },
+  {
+    "query_id": "q17",
+    "passage_id": "p17",
+    "passage": "Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard pitch. It is one of the most popular sports in India.",
+    "language": "en",
+    "query_type": "sports"
+  },
+  {
+    "query_id": "q18",
+    "passage_id": "p18",
+    "passage": "The AI4Bharat MSMARCO-XI dataset is a multilingual benchmark collection specifically created for evaluating information retrieval across eleven major Indian languages.",
+    "language": "en",
+    "query_type": "technical"
+  },
+  {
+    "query_id": "q19",
+    "passage_id": "p19",
+    "passage": "Machine Learning (ML) is a branch of artificial intelligence and computer science focused on using data and algorithms to imitate the way humans learn, gradually improving its accuracy.",
+    "language": "en",
+    "query_type": "technical"
+  },
+  {
+    "query_id": "q20",
+    "passage_id": "p20",
+    "passage": "The Constitution of India is the supreme law of India. The document lays down the framework that demarcates fundamental political code, structure, procedures, powers, and duties of government institutions.",
+    "language": "en",
+    "query_type": "factual"
+  }
+]
