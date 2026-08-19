@@ -1,3 +1,5 @@
+import os
+import json
 from typing import List, Dict, Any, Optional
 from qdrant_client import QdrantClient
 from qdrant_client.http import models
@@ -43,6 +45,32 @@ class RetrievalService:
         """Seeds standard dataset passages into Qdrant & BM25 index on startup."""
         if self.indexed_docs:
             return
+
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_file_paths = [
+            os.path.join(base_dir, "..", "..", "..", "data", "msmarco_xi_en_train.json"),
+            "./data/msmarco_xi_en_train.json",
+            "data/msmarco_xi_en_train.json"
+        ]
+
+        loaded_passages = []
+        for fp in data_file_paths:
+            if os.path.exists(fp):
+                try:
+                    with open(fp, "r", encoding="utf-8") as f:
+                        records = json.load(f)
+                        for idx, rec in enumerate(records, start=1):
+                            loaded_passages.append({
+                                "chunk_id": f"p{idx}_c1",
+                                "passage_id": rec.get("passage_id", f"p{idx}"),
+                                "source_id": rec.get("passage_id", f"p{idx}"),
+                                "text": rec.get("passage", rec.get("text", "")).strip(),
+                                "language": rec.get("language", "en")
+                            })
+                    logger.info(f"Loaded {len(loaded_passages)} records from dataset file '{fp}'.")
+                    break
+                except Exception as e:
+                    logger.warning(f"Could not read dataset file '{fp}': {e}")
 
         default_passages = [
             {
@@ -152,8 +180,9 @@ class RetrievalService:
             }
         ]
 
-        logger.info(f"Seeding default knowledge base ({len(default_passages)} passages)...")
-        self.index_chunks(default_passages)
+        passages_to_seed = loaded_passages if loaded_passages else default_passages
+        logger.info(f"Seeding default knowledge base ({len(passages_to_seed)} passages)...")
+        self.index_chunks(passages_to_seed)
 
     def ensure_collection(self, vector_size: int = 384) -> bool:
         if not self.client:
