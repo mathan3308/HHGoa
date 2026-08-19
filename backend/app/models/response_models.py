@@ -61,3 +61,9 @@ class HealthCheckResponse(BaseModel):
     timestamp: str
     services: Dict[str, str]
     mock_mode: bool
+    dataset: Optional[str] = "ai4bharat/MSMARCO-XI"
+    collection: Optional[str] = "msmarco_xi_full"
+    index_mode: Optional[str] = "full"
+    languages: Optional[str] = "all"
+    qdrant_points: Optional[int] = 0
+    embedding_model: Optional[str] = "intfloat/multilingual-e5-small"

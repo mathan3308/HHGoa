@@ -1,5 +1,5 @@
 import os
-from typing import List
+from typing import List, Optional
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # Locate .env file dynamically whether running from root, backend, or Docker
@@ -26,15 +26,22 @@ class Settings(BaseSettings):
     # Qdrant Vector Database
     QDRANT_URL: str = "http://localhost:6333"
     QDRANT_API_KEY: str = ""
-    QDRANT_COLLECTION_NAME: str = "msmarco_xi"
+    QDRANT_COLLECTION_NAME: str = "msmarco_xi_full"
 
     # Embedding Model Config
     EMBEDDING_MODEL: str = "intfloat/multilingual-e5-small"
+    EMBEDDING_BATCH_SIZE: int = 64
+    QDRANT_BATCH_SIZE: int = 256
 
-    # Dataset Configuration
+    # Dataset Configuration (Official AI4Bharat/MSMARCO-XI)
     DATASET_NAME: str = "ai4bharat/MSMARCO-XI"
-    DATASET_CONFIG: str = "en"
-    DATASET_SPLIT: str = "train"
+    DATASET_CONFIG: str = "default"
+    DATASET_LANGUAGES: str = "all"
+    DATASET_SPLITS: str = "train,validation"
+    DATASET_STREAMING: bool = True
+    DATASET_MAX_RECORDS: Optional[int] = None
+    DATASET_BATCH_SIZE: int = 256
+    INGEST_MODE: str = "sample"
 
     # RAG & Chunking Parameters
     TOP_K: int = 10
